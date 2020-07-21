@@ -16,16 +16,16 @@ Activation functions play a critical role in neural networks, as the output vari
 
 This activation function ensures that the output is always between 0 and 1, irrespective of the input. That's why it is also used in logistic regression, to predict the probability of an event.
 
-$f(x)=\frac{1}{1+e^{-x}}$
+<img src="https://render.githubusercontent.com/render/math?math=f(x)=\frac{1}{1+e^{-x}}">
 
 ### Hyperbolic Tangent
 
 hyperbolic tangent activation (tanh) ensures that the output value remains between -1 to 1, regardless of the input. Following is the tanh formula:
 
-$f(x) = \frac{e^2x - 1}{e^2x + 1}$
+<img src="https://render.githubusercontent.com/render/math?math=f(x)=\frac{e^2x-1}{e^2x+1}">
 
 ### Rectified Linear Unit
 
 Rectified linear units (ReLUs) have been increasingly popular over the last few years and have become the default activation function. A ReLU is very powerful, as it produces values between 0 and infinite. If the input is 0 or less than 0, the output is always going to be 0, but for anything more than 0, the output is similar to the input. The formula for a ReLU is
 
-$f(x) = max(0, x)$
+<img src="https://render.githubusercontent.com/render/math?math=f(x)=max(0,x)">
