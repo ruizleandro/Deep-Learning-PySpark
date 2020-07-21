@@ -29,3 +29,29 @@ hyperbolic tangent activation (tanh) ensures that the output value remains betwe
 Rectified linear units (ReLUs) have been increasingly popular over the last few years and have become the default activation function. A ReLU is very powerful, as it produces values between 0 and infinite. If the input is 0 or less than 0, the output is always going to be 0, but for anything more than 0, the output is similar to the input. The formula for a ReLU is
 
 <img src="https://render.githubusercontent.com/render/math?math=f(x)=max(0,x)">
+
+# Neuron Computations
+
+Now that we have a basic understanding of different activation functions, let's consider an example, to understand how the actual output is calculated inside a neuron. Let's say we have two inputs, X1 and X2, with values of 0.2 and 0.7, respectively, and the weights are 0.05 and 0.03. The summation function calculates the total sum of incoming input signals.
+
+The summation is as follows:
+
+<img src="https://render.githubusercontent.com/render/math?math=sum = X1 * W1 + X2 * W2">
+
+<img src="https://render.githubusercontent.com/render/math?math=sum = 0.2 * 0.05 + 0.7 * 0.03">
+
+<img src="https://render.githubusercontent.com/render/math?math=sum = 0.01 + 0.021">
+
+<img src="https://render.githubusercontent.com/render/math?math=sum = 0.031">
+
+The next step is to pass this sum through an activation function. Let's consider using a sigmoid function, which returns values between 0 and 1, irrespective of the input. The sigmoid function will calculate the value, as follows:
+
+<img src="https://render.githubusercontent.com/render/math?math=f(x) = \frac{1}{1 + e^-x}">
+
+<img src="https://render.githubusercontent.com/render/math?math=f(sum) = \frac{1}{1 + e^-sum}">
+
+<img src="https://render.githubusercontent.com/render/math?math=f(0.031) = \frac{1}{1 + e^-0.031}">
+
+<img src="https://render.githubusercontent.com/render/math?math=f(0.031) = 0.5077">
+
+So, the output of this single neuron is equal to 0.5077. Now that we know a single neuron operates, let's quickly go over how multiple connected neurons work together to calculate the output.
