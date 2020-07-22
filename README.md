@@ -75,3 +75,7 @@ An additional component that is passed is the bias neuron input. This is mainly 
 * Step 4: Weights of the connections are readjusted according to the output, to minimize the overall errors made by the network, to the point that there is no further reduction of error on the training data.
 
 * Step 5: Now that we have the final version of the weights, a new output value is calculated, based on updated weights, by the network.
+
+# Building a Multilayer Perceptron with PySpark
+
+[Jump to the notebook!](https://github.com/ruizleandro/Deep-Learning-PySpark/blob/master/Building_a_Multilayer_Perceptron_with_PySpark.ipynb)
