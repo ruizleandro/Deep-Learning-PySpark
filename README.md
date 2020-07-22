@@ -20,7 +20,7 @@ This activation function ensures that the output is always between 0 and 1, irre
 
 ### Hyperbolic Tangent
 
-hyperbolic tangent activation (tanh) ensures that the output value remains between -1 to 1, regardless of the input. Following is the tanh formula:
+Hyperbolic tangent activation (tanh) ensures that the output value remains between -1 to 1, regardless of the input. Following is the tanh formula:
 
 <img src="https://render.githubusercontent.com/render/math?math=f(x)=\frac{e^2x-1}{e^2x+1}">
 
